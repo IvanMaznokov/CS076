@@ -1,0 +1,30 @@
+<androidx.constraintlayout.widget.ConstraintLayout ...>
+
+  <EditText
+    android:id="@+id/chat_message_editText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Type your message here"
+    app:layout_constraintBottomToBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStartToStartOf="parent" />
+
+  <Button
+    android:id="@+id/send_message_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:text="Send"
+    app:layout_constraintBottomOf="@id/chat_message_editText"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+  <RecyclerView
+    android:id="@+id/chat_messages_recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_constraintBottomToBottomOf="@id/chat_message_editText"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStartToStartOf="parent"
+    app:layout_constraintTopToBottomOf="@+id/registerButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
